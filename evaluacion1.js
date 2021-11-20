@@ -1,4 +1,4 @@
-console.log(`Elija una operacion por realizar:
+console.log(`Escoge la operación que desee:
 1.- Suma
 2.- Resta
 3.- Multiplicacion
@@ -7,62 +7,62 @@ console.log(`Elija una operacion por realizar:
 6.- Formula general
 7.- Binomio al cuadrado perfecto`);
 
-var op = parseInt(prompt("Selecciona una operacion"));
+var op = parseInt(prompt("Selecciona una operación:"));
 
 switch (op){
     case 1:
-        var num1= parseInt(prompt("Primer numero: "));
-        var num2= parseInt(prompt("Segundo numero: "));
-            function ResultSuma(){
+        var num1= parseInt(prompt("Primer número: "));
+        var num2= parseInt(prompt("Segundo número: "));
+            function RSuma(){
                 var suma = num1+parseInt(num2);
                 console.log(`${suma}`);
             }
-            ResultSuma();
+            RSuma();
         break;
 
     case 2:
-            var num1= parseInt(prompt("Primer numero: "));
-            var num2= parseInt(prompt("Segundo numero: "));
-                function ResultResta(){
+            var num1= parseInt(prompt("Primer número: "));
+            var num2= parseInt(prompt("Segundo número: "));
+                function RResta(){
                     var resta = num1-parseInt(num2);
                     console.log(`${resta}`);
                 }
-                ResultResta();
+                RResta();
         break;
 
     case 3:
-            var num1= parseInt(prompt("Primer numero: "));
-            var num2= parseInt(prompt("Segundo numero: "));
-                function ResultMulti(){
+            var num1= parseInt(prompt("Primer número: "));
+            var num2= parseInt(prompt("Segundo número: "));
+                function RMulti(){
                     var multi = num1*parseInt(num2);
                     console.log(`${multi}`);
                 }
-                ResultMulti();
+                RMulti();
         break;
 
     case 4:
-        var num1= parseInt(prompt("Primer numero: "));
-        var num2= parseInt(prompt("Segundo numero: "));
-            function ResultDivision(){
+        var num1= parseInt(prompt("Primer número: "));
+        var num2= parseInt(prompt("Segundo número: "));
+            function RDivision(){
                 var division = num1/parseInt(num2);
                 console.log(`${division}`);
             }
-            ResultDivision();
+            RDivision();
         break;
     
     case 5:
-            var num1= parseInt(prompt("Numero deseado: "));
-                function ResultRaiz(){
+            var num1= parseInt(prompt("Número deseado: "));
+                function RRaiz(){
                     var raiz = num1*parseInt(num1);
                     console.log(`${raiz}`);
                 }
-                ResultRaiz();
+                RRaiz();
         break;
 
     case 6:
-                var num1= parseInt(prompt("Primer numero: "));
-                var num2= parseInt(prompt("Segundo numero: "));
-                var num3= parseInt(prompt("Tercer numero: "));
+                var num1= parseInt(prompt("Primer número: "));
+                var num2= parseInt(prompt("Segundo número: "));
+                var num3= parseInt(prompt("Tercer número: "));
                     var ResultX1= (-num2 + (num2*num2) - (4*num1*num3))/(2.0*num1);
                     var ResultX2= (-num2 - (num2*num2) - (4*num1*num3))/(2.0*num1);
 
@@ -72,11 +72,11 @@ switch (op){
         break;
 
     case 7:
-                    var num1= parseInt(prompt("Primer numero: "));
-                    var num2= parseInt(prompt("Segundo numero: "));
-                        var ResultBinomio = (num1*num1) + (2*num1*num2) + (num2*num2);
+                    var num1= parseInt(prompt("Primer número: "));
+                    var num2= parseInt(prompt("Segundo número: "));
+                        var RBinomio = (num1*num1) + (2*num1*num2) + (num2*num2);
     
-                    alert("Resultado: "+ResultBinomio);
+                    alert("Resultado: "+RBinomio);
     
         break;
 }
